@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
       <div className="absolute inset-0 overflow-hidden">
-        <BinaryAnimation opacity={0.588} />
+        <BinaryAnimation opacity={0.882} />
 
         <div className="absolute inset-0 bg-gradient-to-br from-[#080b0b]/70 to-[#1b2728]/70 mix-blend-multiply z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#080b0b]/30 via-transparent to-[#080b0b]/70 z-10"></div>
