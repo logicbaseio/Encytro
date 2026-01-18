@@ -183,11 +183,11 @@ export const ReflectionsSection = () => {
                     </button>
                  </div>
 
-                 <div className="relative w-full max-w-xs md:w-64 h-48 md:h-64 flex-shrink-0 perspective-1000 flex items-center justify-center">
-                    <div className="relative w-48 h-32 flex justify-center items-end">
+                 <div className="relative w-full max-w-xs md:w-64 h-64 md:h-80 flex-shrink-0 perspective-1000 flex items-center justify-center">
+                    <div className="relative w-48 h-32 flex justify-center items-center translate-y-4 md:translate-y-6">
                         
-                        <div className="absolute -top-24 left-1/2 -translate-x-1/2 z-50 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg border border-white/20 shadow-lg">
-                           <img src="encytro_logo_hx260-300x101.png" alt="Visa" className="h-8 w-auto brightness-200 contrast-200" />
+                        <div className="absolute -top-12 md:-top-16 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg border border-white/30 shadow-lg">
+                           <img src="/visa-logo.png" alt="Visa" className="h-6 w-auto object-contain" />
                         </div>
 
                         <div className="wallet-body absolute bottom-0 w-40 h-32 bg-slate-800 rounded-lg border border-slate-600 shadow-2xl z-10"></div>
