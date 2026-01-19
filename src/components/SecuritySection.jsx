@@ -67,7 +67,7 @@ export const SecuritySection = () => {
                         Protect your Merchants in the gaps of all Data Breach Risks with our comprehensive security suite.
                     </p>
 
-                    <p className="text-2xl md:text-4xl lg:text-6xl font-bold flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <p className="text-4xl md:text-4xl lg:text-6xl font-bold flex flex-col sm:flex-row items-center justify-center gap-2">
                          <span className="text-black">Complete</span> 
                          <span className="flex items-center gap-1">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">

@@ -27,7 +27,7 @@ export const Hero = () => {
           <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter mb-8 leading-[0.9] drop-shadow-2xl">
             YOUR FUTURE <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-400">
-              DEMANDS <TypewriterText text="INSIGHT!" speed={150} delay={2000} />
+              DEMANDS <span className="md:hidden"><br /></span><TypewriterText text="INSIGHT!" speed={150} delay={2000} />
             </span>
           </h1>
         </Reveal>

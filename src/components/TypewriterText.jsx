@@ -36,9 +36,9 @@ export const TypewriterText = ({ text = "INSIGHT", speed = 150, delay = 2000 }) 
   }, [currentIndex, isDeleting, isPaused, text, speed, delay]);
 
   return (
-    <span className="inline-block">
+    <span className="inline-block" style={{ background: 'linear-gradient(to right, #2dd4bf, #0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
       {displayedText}
-      <span className="animate-pulse inline-block w-0.5 h-[1em] bg-teal-400 ml-1 align-middle">|</span>
+      <span className="animate-pulse inline-block w-0.5 h-[1em] ml-1 align-middle" style={{ background: 'linear-gradient(to right, #2dd4bf, #0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>|</span>
     </span>
   );
 };
