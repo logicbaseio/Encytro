@@ -63,14 +63,17 @@ export const SecuritySection = () => {
                         MERCHANT DATA <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">SECURITY</span>
                     </h2>
                     
-                    <p className="text-2xl md:text-3xl font-bold text-slate-500 mb-4 max-w-2xl mx-auto">
+                    <p className="text-2xl md:text-3xl font-medium text-slate-500 mb-4 max-w-2xl mx-auto">
                         Protect your Merchants in the gaps of all Data Breach Risks with our comprehensive security suite.
                     </p>
 
-                    <p className="text-xl md:text-2xl lg:text-3xl font-bold flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <p className="text-2xl md:text-4xl lg:text-6xl font-bold flex flex-col sm:flex-row items-center justify-center gap-2">
                          <span className="text-black">Complete</span> 
-                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">
-                            <LoopingCounter360 target={360} /> Protection
+                         <span className="flex items-center gap-1">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">
+                               <LoopingCounter360 target={360} />
+                            </span>
+                            <span className="text-black">Protection</span>
                          </span>
                     </p>
                 </Reveal>
@@ -107,7 +110,7 @@ export const SecuritySection = () => {
                                         })}
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-600 mb-3 transition-colors relative z-10">
+                                    <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-600 mb-3 transition-colors relative z-10">
                                         {item.title}
                                     </h3>
                                     

@@ -93,7 +93,7 @@ export const ContactFormSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <Reveal>
-            <h2 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tighter">
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tighter">
               GET IN <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">TOUCH</span>
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto">
@@ -243,14 +243,14 @@ export const ContactFormSection = () => {
             <div className="mt-12 grid md:grid-cols-2 gap-6 text-center">
               <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-2xl p-6">
                 <Mail className="w-8 h-8 text-teal-400 mx-auto mb-3" />
-                <h3 className="text-white font-bold mb-2">Email Us</h3>
+                <h3 className="text-white font-semibold mb-2">Email Us</h3>
                 <a href="mailto:sales@encytro.com" className="text-teal-400 hover:text-teal-300 transition-colors">
                   sales@encytro.com
                 </a>
               </div>
               <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-2xl p-6">
                 <Phone className="w-8 h-8 text-teal-400 mx-auto mb-3" />
-                <h3 className="text-white font-bold mb-2">Call Us</h3>
+                <h3 className="text-white font-semibold mb-2">Call Us</h3>
                 <a href="tel:8669499777" className="text-teal-400 hover:text-teal-300 transition-colors">
                   866.949.9777
                 </a>

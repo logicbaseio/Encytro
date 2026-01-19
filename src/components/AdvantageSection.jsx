@@ -21,8 +21,8 @@ export const AdvantageSection = () => {
                     <h2 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tighter">
                         ENCYTRO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">ADVANTAGE</span>
                     </h2>
-                    <div className="text-2xl md:text-3xl font-bold text-slate-300">
-                        Just Got <strong className="text-white">BIGGER.</strong>
+                    <div className="text-2xl md:text-3xl font-semibold text-slate-300">
+                      Just Got <strong className="text-white">BIGGER.</strong>
                     </div>
                 </Reveal>
             </div>
@@ -36,7 +36,7 @@ export const AdvantageSection = () => {
                             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500 to-sky-600 text-white text-sm font-bold uppercase tracking-wider shadow-lg shadow-cyan-500/30 mb-6 animate-pulse">
                                 <Zap className="w-4 h-4 fill-current" /> New Feature
                             </div>
-                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
+                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
                                 CNP (Card Not Present) <br/>
                                 <span className="text-cyan-400">Is Finally Here!</span>
                             </h3>
@@ -91,7 +91,7 @@ export const AdvantageSection = () => {
                                 <Globe className="w-5 h-5 text-teal-600" />
                             </div>
                         </div>
-                        <h4 className="text-xl font-bold text-white text-center mb-3">E-Commerce Sites</h4>
+                        <h4 className="text-xl font-semibold text-white text-center mb-3">E-Commerce Sites</h4>
                         <p className="text-slate-400 text-center text-sm">Full coverage for online shopping carts and digital storefronts.</p>
                     </div>
                 </Reveal>
@@ -106,7 +106,7 @@ export const AdvantageSection = () => {
                                 <Zap className="w-5 h-5 text-teal-600" />
                             </div>
                         </div>
-                        <h4 className="text-xl font-bold text-white text-center mb-3">App Purchases</h4>
+                        <h4 className="text-xl font-semibold text-white text-center mb-3">App Purchases</h4>
                         <p className="text-slate-400 text-center text-sm">Protection for in-app purchases, subscriptions, and mobile ecosystems.</p>
                     </div>
                 </Reveal>
@@ -121,7 +121,7 @@ export const AdvantageSection = () => {
                                 <FileText className="w-5 h-5 text-teal-600" />
                             </div>
                         </div>
-                        <h4 className="text-xl font-bold text-white text-center mb-3">MOTO</h4>
+                        <h4 className="text-xl font-semibold text-white text-center mb-3">MOTO</h4>
                         <p className="text-slate-400 text-center text-sm">Mail Order / Telephone Order transactions are now fully secured.</p>
                     </div>
                 </Reveal>
@@ -130,7 +130,7 @@ export const AdvantageSection = () => {
             <Reveal delay={600}>
                 <div className="bg-slate-800/80 backdrop-blur border border-slate-700 rounded-3xl p-10 text-center relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-500 to-sky-500"></div>
-                    <h3 className="text-2xl font-bold text-white mb-8">Comprehensive Coverage Map</h3>
+                    <h3 className="text-2xl font-semibold text-white mb-8">Comprehensive Coverage Map</h3>
                     <div className="flex flex-wrap justify-center gap-6">
                         {[
                             { label: "Chargeback Fees", icon: <FileText />, color: "text-rose-400" },

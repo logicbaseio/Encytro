@@ -62,7 +62,7 @@ export const DeflectSection = () => {
             <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
               ENCYTRO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-400">DEFLECT</span>
             </h2>
-            <h3 className="text-2xl md:text-3xl font-bold text-teal-400 mb-6">
+            <h3 className="text-2xl md:text-3xl font-semibold text-teal-400 mb-6">
                Get Rid of <span className="text-white">85%</span> of All Chargebacks.
             </h3>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -89,7 +89,7 @@ export const DeflectSection = () => {
           <Reveal direction="left">
             <div className="bg-slate-800/50 border border-slate-700 p-8 rounded-3xl h-full flex flex-col justify-center relative overflow-hidden group">
               <div className="absolute inset-0 bg-teal-500/5 group-hover:bg-teal-500/10 transition-colors duration-500"></div>
-              <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 relative z-10">
+              <h3 className="text-2xl font-semibold mb-8 flex items-center gap-3 relative z-10">
                 <Activity className="text-teal-500" /> The Workflow
               </h3>
               <div className="space-y-8 relative z-10">
@@ -105,7 +105,7 @@ export const DeflectSection = () => {
                       {step.icon}
                     </div>
                     <div>
-                      <h4 className="font-bold text-lg text-white">{step.title}</h4>
+                      <h4 className="font-semibold text-lg text-white">{step.title}</h4>
                       <p className="text-slate-400 text-sm">{step.desc}</p>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export const DeflectSection = () => {
           <Reveal direction="right" delay={200}>
             <div className="bg-gradient-to-br from-teal-700 to-slate-900 rounded-3xl p-8 shadow-2xl text-white h-full relative overflow-hidden border border-white/10">
                <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-2">Impact Calculator</h3>
+                  <h3 className="text-2xl font-semibold mb-2">Impact Calculator</h3>
                   <p className="text-teal-100 text-sm mb-8">Visualize your protection level.</p>
                   
                   <div className="mb-10">
@@ -158,7 +158,7 @@ export const DeflectSection = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-teal-500/5 blur-3xl -z-10 rounded-full"></div>
           <Reveal>
-             <h3 className="text-center text-2xl font-bold mb-12 flex items-center justify-center gap-3">
+             <h3 className="text-center text-2xl font-semibold mb-12 flex items-center justify-center gap-3">
                <ShieldCheck className="text-green-400" /> Active Defense Modules
              </h3>
              
@@ -171,7 +171,7 @@ export const DeflectSection = () => {
                            {React.cloneElement(feat.icon, { size: 20 })}
                         </div>
                         <div className="min-w-0">
-                           <h4 className="font-bold text-base md:text-lg mb-1 group-hover:text-cyan-300 transition-colors">{feat.title}</h4>
+                           <h4 className="font-semibold text-base md:text-lg mb-1 group-hover:text-cyan-300 transition-colors">{feat.title}</h4>
                            <p className="text-xs md:text-sm text-slate-400 group-hover:text-slate-300">{feat.desc}</p>
                         </div>
                      </div>

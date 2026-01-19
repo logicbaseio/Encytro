@@ -25,7 +25,7 @@ export const PCISection = () => {
           <h2 className="text-5xl md:text-7xl font-black text-slate-900 mb-4 tracking-tighter">
             ENCYTRO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">PCI</span>
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold text-slate-500 mb-8 max-w-2xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-semibold text-slate-500 mb-8 max-w-2xl mx-auto">
              Simply Put, No Other Portal Competes.
           </h3>
           <p className="text-lg text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -98,12 +98,20 @@ export const PCISection = () => {
           <div className="flex flex-col items-center w-full max-w-6xl z-10 relative">
              <div className="h-16 border-l border-slate-300 border-dashed"></div>
              
-             <div className="hidden lg:grid grid-cols-3 w-full h-16 relative">
-                 <div className="absolute top-0 left-[16.66%] right-[16.66%] border-t border-slate-300 border-dashed"></div>
+             <div className="hidden lg:grid grid-cols-3 w-full h-16 relative gap-x-6">
+                 {/* Horizontal line connecting top row cards - precisely aligned with card centers */}
+                 <div className="absolute top-0 left-[calc((100%/6)-0.5px)] right-[calc((100%/6)-0.5px)] border-t border-slate-300 border-dashed"></div>
                  
-                 <div className="flex justify-center h-full"><div className="h-full border-l border-slate-300 border-dashed"></div></div>
-                 <div className="flex justify-center h-full"><div className="h-full border-l border-slate-300 border-dashed"></div></div>
-                 <div className="flex justify-center h-full"><div className="h-full border-l border-slate-300 border-dashed"></div></div>
+                 {/* Vertical lines aligned with card centers */}
+                 <div className="flex justify-center h-full">
+                    <div className="h-full border-l border-slate-300 border-dashed"></div>
+                 </div>
+                 <div className="flex justify-center h-full">
+                    <div className="h-full border-l border-slate-300 border-dashed"></div>
+                 </div>
+                 <div className="flex justify-center h-full">
+                    <div className="h-full border-l border-slate-300 border-dashed"></div>
+                 </div>
              </div>
              
              <div className="lg:hidden h-8 border-l border-slate-300 border-dashed"></div>
@@ -135,7 +143,7 @@ export const PCISection = () => {
                           {React.cloneElement(feature.icon, { size: 28, strokeWidth: 2 })}
                        </div>
                        
-                       <h3 className="font-bold text-lg text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">{feature.title}</h3>
+                       <h3 className="font-semibold text-lg text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">{feature.title}</h3>
                        <p className="text-sm text-slate-500 group-hover:text-slate-600 leading-relaxed">{feature.desc}</p>
                        
                        <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">

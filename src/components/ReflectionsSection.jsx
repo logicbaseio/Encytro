@@ -52,7 +52,7 @@ export const ReflectionsSection = () => {
                </span>
             </div>
             
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <h3 className="text-2xl md:text-3xl font-semibold text-slate-600 max-w-3xl mx-auto leading-relaxed">
               A Smarter Way to <span className="text-teal-600">Prevent Chargebacks</span> Before They Hit Your Bottom Line.
             </h3>
           </div>
@@ -63,7 +63,7 @@ export const ReflectionsSection = () => {
               <div className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-sky-500 tracking-tighter mb-2 flex items-center justify-center pr-4">
                  <LoopingCounter20 target={20} />
               </div>
-              <h4 className="text-2xl font-bold text-slate-800 uppercase tracking-wide mb-2">Reduction in Chargebacks</h4>
+              <h4 className="text-2xl font-semibold text-slate-800 uppercase tracking-wide mb-2">Reduction in Chargebacks</h4>
               <p className="text-slate-500 max-w-lg mx-auto">
                  Reflections automatically removes an additional 20% of disputes in the Alert phase before they escalate.
               </p>
@@ -85,7 +85,7 @@ export const ReflectionsSection = () => {
 
                 <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
                    <div className="flex-1 text-left">
-                      <h4 className="text-3xl font-bold text-white mb-4 flex items-center gap-3">
+                      <h4 className="text-3xl font-semibold text-white mb-4 flex items-center gap-3">
                         3X Verified Purchase Logic
                       </h4>
                       <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -160,7 +160,7 @@ export const ReflectionsSection = () => {
                       <div className="p-3 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl text-teal-600 border border-teal-100 mb-4 group-hover:scale-110 transition-transform">
                          {React.cloneElement(item.icon, { size: 28, strokeWidth: 1.5 })}
                       </div>
-                      <h4 className="font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">{item.title}</h4>
+                      <h4 className="font-semibold text-lg text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">{item.title}</h4>
                       <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
                    </div>
                    
@@ -184,7 +184,7 @@ export const ReflectionsSection = () => {
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/10 border border-red-500/30 rounded-full text-red-400 text-xs font-bold uppercase tracking-wider mb-4 md:mb-6">
                        <Siren className="w-3 h-3 animate-pulse" /> Compliance Alert
                     </div>
-                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-2">VAMP PROTECTION</h3>
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2">VAMP PROTECTION</h3>
                     
                     <p className="text-teal-300 font-bold uppercase tracking-widest text-xs md:text-sm mb-4 md:mb-6">
                        Visa Acquirer Monitoring Program
