@@ -70,7 +70,7 @@ export const ReflectionsSection = () => {
                `}</style>
             </div>
             
-            <h3 className="text-2xl md:text-3xl font-semibold text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <h3 className="text-2xl md:text-3xl font-semibold text-slate-600 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
               A Smarter Way to <span className="text-teal-600">Prevent Chargebacks</span> Before They Hit Your Bottom Line.
             </h3>
           </div>
@@ -81,7 +81,7 @@ export const ReflectionsSection = () => {
               <div className="text-8xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-sky-500 tracking-tighter mb-2 flex items-center justify-center pr-4">
                  <LoopingCounter20 target={20} />
               </div>
-              <h4 className="text-2xl font-semibold text-slate-800 uppercase tracking-wide mb-2">Reduction in Chargebacks</h4>
+              <h4 className="text-2xl font-semibold text-slate-800 uppercase tracking-wide mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Reduction in Chargebacks</h4>
               <p className="text-slate-500 max-w-lg mx-auto">
                  Reflections automatically removes an additional 20% of disputes in the Alert phase before they escalate.
               </p>

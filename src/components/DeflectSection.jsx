@@ -62,7 +62,7 @@ export const DeflectSection = () => {
             <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
               ENCYTRO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-400">DEFLECT</span>
             </h2>
-            <h3 className="text-2xl md:text-3xl font-semibold text-teal-400 mb-6">
+            <h3 className="text-2xl md:text-3xl font-semibold text-teal-400 mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                Get Rid of <span className="text-white">85%</span> of All Chargebacks.
             </h3>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">

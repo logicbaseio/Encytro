@@ -25,7 +25,7 @@ export const PCISection = () => {
           <h2 className="text-5xl md:text-7xl font-black text-slate-900 mb-4 tracking-tighter">
             ENCYTRO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-sky-500">PCI</span>
           </h2>
-          <h3 className="text-2xl md:text-3xl font-semibold text-slate-500 mb-8 max-w-2xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-semibold text-slate-500 mb-8 max-w-2xl mx-auto" style={{ fontFamily: "'Poppins', sans-serif" }}>
              Simply Put, No Other Portal Competes.
           </h3>
           <p className="text-lg text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
