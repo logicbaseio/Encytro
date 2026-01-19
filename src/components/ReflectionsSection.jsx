@@ -47,9 +47,27 @@ export const ReflectionsSection = () => {
                <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-tight break-words px-2">
                  ENCYTRO <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-sky-500 pr-1">REFLECTIONS</span>
                </h2>
-               <span className="shrink-0 px-4 py-1 border border-amber-400 text-amber-500 text-xs font-bold uppercase tracking-widest rounded-full shadow-[0_0_10px_rgba(251,191,36,0.3)] bg-white mt-2 md:mt-0">
-                  New
+               <span className="shrink-0 inline-flex items-center px-4 py-1.5 bg-gradient-to-r from-teal-500 to-sky-500 text-white text-xs font-bold uppercase tracking-wider rounded-lg mt-2 md:mt-0 animate-pulse-subtle">
+                  <span className="flex items-center gap-1.5">
+                     <span className="w-1.5 h-1.5 bg-white rounded-full animate-ping"></span>
+                     New
+                  </span>
                </span>
+               <style>{`
+                 @keyframes pulse-subtle {
+                   0%, 100% {
+                     opacity: 1;
+                     transform: scale(1);
+                   }
+                   50% {
+                     opacity: 0.9;
+                     transform: scale(1.02);
+                   }
+                 }
+                 .animate-pulse-subtle {
+                   animation: pulse-subtle 2s ease-in-out infinite;
+                 }
+               `}</style>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-semibold text-slate-600 max-w-3xl mx-auto leading-relaxed">
