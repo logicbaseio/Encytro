@@ -47,12 +47,12 @@ export const PCISection = () => {
         <Reveal delay={300} className="w-full flex flex-col items-center">
           <div className="relative w-full max-w-3xl z-30">
              <div className="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl overflow-hidden transition-all duration-500 shadow-xl">
-                <div className="bg-white/40 border-b border-white/20 p-4 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div className="bg-white/40 border-b border-white/20 p-4 md:p-8 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-4">
                    <div className="flex items-center gap-3 md:gap-4">
                       <div className="p-2 md:p-3 bg-gradient-to-br from-teal-500 to-sky-400 rounded-xl text-white shadow-lg flex-shrink-0">
                          <ShieldCheck className="w-6 h-6 md:w-8 md:h-8" />
                       </div>
-                      <div className="text-left">
+                      <div className="text-center sm:text-left">
                          <div className="font-bold text-lg md:text-2xl text-slate-900">Compliance Status</div>
                          <div className="text-xs md:text-sm text-slate-500 font-mono">ID: 8821-XCA-99</div>
                       </div>
@@ -115,12 +115,19 @@ export const PCISection = () => {
            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-6 w-full max-w-6xl text-left relative z-20">
               {features.map((feature, i) => {
                  const isTopRow = i < 3;
+                 const isNotLast = i < features.length - 1;
                  return (
                  <div key={i} className="relative group flex flex-col items-center">
                     <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rounded-full border border-slate-300 z-30 animate-pulse"></div>
                     
+                    {/* Desktop: Top row connection */}
                     {isTopRow && (
                        <div className="hidden lg:block absolute h-32 border-l border-slate-300 border-dashed top-full left-1/2 -translate-x-1/2 -z-10"></div>
+                    )}
+                    
+                    {/* Mobile: Vertical connection line between cards */}
+                    {isNotLast && (
+                       <div className="lg:hidden absolute h-20 border-l border-slate-300 border-dashed top-full left-1/2 -translate-x-1/2 -z-10"></div>
                     )}
                     
                     <div className="w-full h-full p-6 bg-white rounded-xl shadow-sm hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-2 hover:scale-105 transition-all duration-300 border border-slate-200 group-hover:border-teal-300 flex flex-col items-center text-center relative z-20 cursor-pointer">
@@ -136,8 +143,14 @@ export const PCISection = () => {
                        </div>
                     </div>
 
+                    {/* Desktop: Bottom dot for top row */}
                     {isTopRow && (
                        <div className="hidden lg:block absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rounded-full border border-slate-300 z-30 animate-pulse"></div>
+                    )}
+                    
+                    {/* Mobile: Bottom dot for all cards except last */}
+                    {isNotLast && (
+                       <div className="lg:hidden absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rounded-full border border-slate-300 z-30 animate-pulse"></div>
                     )}
                  </div>
               )})}

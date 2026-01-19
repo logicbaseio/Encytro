@@ -142,8 +142,19 @@ export const ReflectionsSection = () => {
                 { icon: <Network />, title: "Real-time Interception", desc: "Catch disputes before they process." },
                 { icon: <Zap />, title: "Integrated with Deflect", desc: "Seamlessly works with your alerts." },
                 { icon: <ShieldAlert />, title: "Reduce Friendly Fraud", desc: "Stop abuse of the system." },
-              ].map((item, i) => (
+              ].map((item, i) => {
+                const isNotLast = i < 3;
+                return (
                 <div key={i} className="group relative flex flex-col items-center">
+                   {/* Mobile: Top dot for first card */}
+                   {i === 0 && (
+                      <div className="md:hidden absolute -top-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rounded-full border-2 border-slate-300 z-30"></div>
+                   )}
+                   
+                   {/* Mobile: Vertical connection line */}
+                   {isNotLast && (
+                      <div className="md:hidden absolute h-16 border-l-2 border-slate-300 top-full left-1/2 -translate-x-1/2 -z-10"></div>
+                   )}
                    
                    <div className="w-full p-6 bg-white/80 backdrop-blur-md rounded-2xl shadow-lg border border-slate-200 hover:border-teal-300 hover:shadow-teal-100/50 hover:-translate-y-2 transition-all duration-300 text-center flex flex-col items-center h-full relative z-20">
                       <div className="p-3 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl text-teal-600 border border-teal-100 mb-4 group-hover:scale-110 transition-transform">
@@ -152,8 +163,13 @@ export const ReflectionsSection = () => {
                       <h4 className="font-bold text-lg text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">{item.title}</h4>
                       <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
                    </div>
+                   
+                   {/* Mobile: Bottom dot */}
+                   {isNotLast && (
+                      <div className="md:hidden absolute -bottom-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rounded-full border-2 border-slate-300 z-30"></div>
+                   )}
                 </div>
-              ))}
+              )})}
            </div>
         </Reveal>
 

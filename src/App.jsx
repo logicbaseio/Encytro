@@ -5,6 +5,7 @@ import { DeflectSection } from './components/DeflectSection';
 import { ReflectionsSection } from './components/ReflectionsSection';
 import { AdvantageSection } from './components/AdvantageSection';
 import { SecuritySection } from './components/SecuritySection';
+import { ContactFormSection } from './components/ContactFormSection';
 import { Footer } from './components/Footer';
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <ReflectionsSection />
         <AdvantageSection />
         <SecuritySection />
+        <ContactFormSection />
         <Footer />
     </div>
   );

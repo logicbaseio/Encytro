@@ -41,7 +41,7 @@ export const Hero = () => {
         <Reveal delay={600}>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <a href="#pci" className="group relative px-8 py-4 bg-teal-600 text-white rounded-full font-bold overflow-hidden shadow-[0_0_20px_rgba(20,184,166,0.5)] hover:shadow-[0_0_30px_rgba(20,184,166,0.7)] transition-all">
-              <span className="relative z-10 flex items-center gap-2">Explore Ecosystem <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform"/></span>
+              <span className="relative z-10 flex items-center justify-center gap-2">Explore Ecosystem <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform"/></span>
               <div className="absolute inset-0 bg-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
             </a>
             <a href="#contact" className="px-8 py-4 border border-slate-600 bg-slate-900/50 backdrop-blur-sm text-slate-300 hover:text-white hover:border-white rounded-full font-bold transition-all hover:bg-slate-800/80">

@@ -85,9 +85,18 @@ export const SecuritySection = () => {
                 <div className="hidden md:block absolute top-[16.66%] bottom-[16.66%] right-[25%] border-r border-dashed border-slate-300 -z-0"></div>
 
                 <div className="grid md:grid-cols-2 gap-8 relative z-10">
-                    {securityItems.map((item, idx) => (
+                    {securityItems.map((item, idx) => {
+                        const isNotLast = idx < securityItems.length - 1;
+                        const isEvenIndex = idx % 2 === 0;
+                        const isLastInRow = (idx + 1) % 2 === 0;
+                        return (
                         <Reveal key={idx} delay={idx * 100}>
                             <div className="group relative h-full">
+                                {/* Mobile: Vertical connection line between cards */}
+                                {isNotLast && !isLastInRow && (
+                                    <div className="md:hidden absolute h-16 border-l border-dashed border-slate-300 top-full left-1/2 -translate-x-1/2 -z-10"></div>
+                                )}
+                                
                                 <div className="bg-white rounded-2xl p-8 h-full shadow-lg hover:shadow-2xl hover:shadow-sky-500/10 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center relative overflow-hidden group">
                                     
                                     <div className="relative z-10 transform transition-transform duration-300 hover:scale-110 mb-6 drop-shadow-2xl">
@@ -106,9 +115,14 @@ export const SecuritySection = () => {
                                         {item.desc}
                                     </p>
                                 </div>
+                                
+                                {/* Mobile: Bottom dot for cards that have connection below */}
+                                {isNotLast && !isLastInRow && (
+                                    <div className="md:hidden absolute -bottom-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-white rounded-full border border-slate-300 z-30"></div>
+                                )}
                             </div>
                         </Reveal>
-                    ))}
+                    )})}
                 </div>
             </div>
         </div>
