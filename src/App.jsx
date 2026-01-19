@@ -34,6 +34,11 @@ const App = () => {
           .animate-spin-slow {
             animation: spin 3s linear infinite;
           }
+          
+          /* Space Grotesk for all headings */
+          h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+          }
         `}</style>
         
         <Navbar />
